@@ -1,6 +1,6 @@
 (ns exercise3)
 
-(defn ten-minus-by-two
+(defn fibonacci[x]
   [x]
-  (- 10 (* 2 x)))
-
+  (if (< x 2) x (+ (fibonacci(- x 2)) (fibonacci(- x 1))))
+ )
